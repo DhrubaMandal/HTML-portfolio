@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    
+}
+.main{
+width: 100%;
+background: url(bg.png);
+background-position: center;
+background-size: cover;
+height: 100vh;
+position: relative;
+font-family: sans-serif;
+
+
+}
+
+.navbar{
+width: 86%;
+display: flex;
+margin: auto;
+padding: 15px 0;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.navbar .logo{
+    width: 160px;
+    margin-top: 0.5%;
+    margin-left: -6%;
+}
+
+ul{
+    margin-top: -5%;
+   
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: dashed;
+    color: rgb(208, 43, 14);
+    margin-top: -5%;
+}
+
+ul li a:hover{
+    color: rgb(234, 157, 98);
+    transition: 0.15s;
+}
+
+.information{
+    margin-left: 5.7%;
+    margin-top: 6.7% ;
+}
+
+.information h1{
+    font-size: 54px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgba(60, 7, 35, 0.836);
+}
+
+.information h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.information button{
+    text-decoration: none;
+    background-color: rgb(241, 140, 140);
+    border-radius: 20%;
+    color: rgb(2, 2, 17);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 26px 0;
+    transition:  0.4s ease ;
+    display: inline-block;
+    padding: 10px 18px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+   
+}
+
+.information button:hover{
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.15) ;
+      transform: scale(1.1);
+      background-color:rgb(235, 65, 65);
+} 
+
+.image{
+    width: 550px;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+   
+    
+}
+
+.image img{
+    left: 20%;
+    transform: translate(-50%);
+    height: 115%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    gap: 7em;
+    padding: 30px 12% 0;
+    margin-bottom: 60px ;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icons ion-icon{
+    margin-left: 6%;
+    margin-right: -60px;
+    font-size: 20px;
+}
+
+.logo{
+    mix-blend-mode: multiply;
+}
+    </style>   
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="CV.pdf" target="_blank">RESUME</a></li>
+            <li><a href="Contact.pdf">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="information">
+            <h1>Hi, I'm Dhruba</h1>
+            <h1>A Designer.</h1>
+            <h3>I'm a Web Designer and Developer based in Kolkata, West Bengal.</h3>
+            <h3>I like to craft solid and scalable frontend products <br />for better human experiences.</h3>
+            <button>Hire Me</button>
+            
+        </div>
+        <div class="image">
+            <img src="ME.jpg" alt="a picture of dhruba" class="ME">
+        </div>
+
+        <div class="icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
